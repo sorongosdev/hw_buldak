@@ -21,6 +21,7 @@ ul {
     height: 1920px;
     background-color: rgb(28, 36, 37);
     background-image: url('images/ashe-bob.png');
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,7 +30,10 @@ ul {
 .frame {
     width: 1080px;
     height: 1920px;
-    background-color: black;
+    background-image: url('images/alpha_hochi.png');
+    background-size: 15%;
+    background-repeat: repeat;
+    background-color: #1c1c1c;
 }
 
 .dim {
@@ -72,29 +76,12 @@ footer p {
     position: relative;
     padding-top: 680px;
     text-align: center;
-    color: white;
-}
-
-.landing-main h1 {
-    font-family: "Urbanist", sans-serif;
-    font-size: 72pt;
-    font-weight: 500;
-    padding: 0;
-    margin: 0;
-}
-
-.landing-main h3 {
-    font-family: "Urbanist", sans-serif;
-    font-size: 38pt;
-    font-weight: 400;
-    padding-top: 6px;
-    margin: 0;
 }
 
 .landing-main p {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 16pt;
-    padding-top: 870px;
+    padding-top: 600px;
 }
 
 /* Main Page */
@@ -138,7 +125,7 @@ main {
 .main-section {
     height: 360px;
     margin-top: 36px;
-    background-image: url('images/ashe-bob.png');
+    /* background-image: url('images/ashe-bob.png'); */
     background-repeat: no-repeat;
     background-position: right top;
     font-family: "Noto Sans KR", sans-serif;
@@ -168,16 +155,19 @@ main {
 .nav-1 {
     position: relative;
     width: 100%;
-    background-image: url('images/main-nav-1.webp');
-    background-size: cover;
+    background-image: url('images/nav1_btn_img.png');
+    background-size: 105%;
+    background-position: center top 80%;
+    background-repeat: no-repeat; /* 이미지 반복 없음 */
 }
+
 
 .nav-2 {
     display: inline-block;
     width: 500px;
     margin: 20px 14px 0 0;
-    background-image: url('images/main-nav-2.webp');
-    background-position: center;
+    background-image: url('images/nav2_btn_img.png');
+    background-position: center left 10%;
     background-size: cover;
 }
 
@@ -185,9 +175,11 @@ main {
     display: inline-block;
     width: 500px;
     margin: 20px 0 0 0;
-    background-image: url('images/main-nav-3.webp');
-    background-position: center;
-    background-size: cover;
+    background-image: url('images/nav3_btn_img.png');
+    /* background-position: top 10%; */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* background-size: ; */
 }
 
 .main-nav h2 {

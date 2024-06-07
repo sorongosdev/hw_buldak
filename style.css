@@ -88,6 +88,8 @@ footer p {
 /* Header */
 .main-vid {
     width: 1080px;
+    height: 500px;
+    object-fit: cover;
 }
 
 .indicator {
@@ -95,26 +97,27 @@ footer p {
 }
 
 .main-headline {
-    font-family: "Urbanist", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     color: aliceblue;
     text-align: center;
 }
 
 .main-headline h2 {
     width: 300px;
-    font-size: 28pt;
-    font-weight: 400;
+    font-size: 32pt;
+    font-weight: 500;
     margin: 0 auto;
     margin-top: 38px;
     padding-top: 24px;
     border-top: 1px solid #333;
+    text-shadow: 5px 5px 5px black;
 }
 
 .main-headline h3 {
-    font-family: "Noto Sans KR", sans-serif;
     font-size: 18pt;
-    font-weight: lighter;
+    font-weight: 200;
     padding-top: 16px;
+    text-shadow: 5px 5px 5px black;
 }
 
 /* Navigation */
@@ -125,11 +128,14 @@ main {
 .main-section {
     height: 360px;
     margin-top: 36px;
-    /* background-image: url('images/ashe-bob.png'); */
+    background-size: 110%;
+    background-image: url('images/main_section_img.png');
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: left top;
     font-family: "Noto Sans KR", sans-serif;
-    color: #BBB;
+    font-weight: 100;
+    color: yellow;
+    text-shadow: 5px 5px 5px black;
 }
 
 .main-section p {
@@ -165,7 +171,7 @@ main {
 .nav-2 {
     display: inline-block;
     width: 500px;
-    margin: 20px 14px 0 0;
+    margin: 0px 14px 0 0;
     background-image: url('images/nav2_btn_img.png');
     background-position: center left 10%;
     background-size: cover;
@@ -196,11 +202,19 @@ main {
 
 /* Sub Page */
 .sub-header {
+    /* border: 1px solid blue;
     height: 608px;
-    background-image: url('images/sub-header.jpg');
-    background-position: center;
-    background-size: cover;
+    margin-bottom: 5px; */
+}
+
+.sub1-header{
+    /* border: 1px solid blue; */
+    height: 608px;
     margin-bottom: 5px;
+    background-image: url('images/sub1_header.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sub-header nav {
@@ -208,7 +222,7 @@ main {
     align-items: center;
     padding: 10px 0 10px 0;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     /* border: 1px dashed greenyellow; */
 }
 
@@ -219,9 +233,11 @@ main {
 }
 
 .sub-header nav ul li {
+    font-family: "Noto Sans KR", sans-serif;
     display: inline;
     padding: 0 80px;
-    font-size: 14pt;
+    font-size: 18pt;
+    text-shadow: 5px 5px 5px black;
     /* border: 1px dashed blue; */
 }
 
@@ -244,11 +260,12 @@ main {
 
 .sub-section h1 {
     font-size: 28pt;
-    padding: 40px 0 30px 0;
 }
 
 .sub-section h2 {
     font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .sub-gallery {
@@ -268,8 +285,149 @@ main {
 .gallery-img {
     width: 100%;
     height: inherit;
-    background-image: url('images/ashe-screenshot-001.jpeg');
-    background-position: center;
-    background-size: cover;
+    background-image: url('images/sub1_gallery1.png');
+    background-position: top;
+    background-size: 90%;
     /* border: 1px dashed yellowgreen; */
 }
+
+
+/* sub2 */
+.sub2-header{
+    /* border: 1px solid red; */
+}
+
+.sub2-title {
+    margin: 80px 0 0 0;
+    text-align: right;
+    padding-right: 20%;
+    /* border: 1px solid red; */
+}
+
+.sub2-section-left{
+    /* border: 1px solid yellow; */
+    width: 60%;
+    height: 999px;
+    background-image: url('images/half_cooked_buldak.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sub2-section-right{
+    height: 1000px;
+    width: 49%;
+    /* border: 1px solid green; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 100%; */
+}
+
+.sub2-section-left, .sub2-section-right{
+    display: inline-block;
+    /* display: flex; */
+}
+
+
+/* animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sub2-item1, .sub2-item2, .sub2-item3 {
+    opacity: 0;
+    animation: fadeInDown 1.5s ease-out forwards; /* 애니메이션 적용 */
+}
+
+.sub2-item1{
+    background-position: right;
+    width: 540px;
+    height: 333px;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-image: url('images/jajaroni.png');
+    animation-delay: 0.5s;
+}
+
+.sub2-item2{
+    background-position: right;
+    width: 540px;
+    height: 333px;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-image: url('images/buldak_tteokboki.png');
+    animation-delay: 1s; 
+
+}
+
+.sub2-item3{
+    background-position: right;
+    width: 540px;
+    height: 333px;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-image: url('images/ganjjam_img.png');
+    animation-delay: 1.5s;
+}
+
+.sub2-container{
+    display: flex;
+    font-weight: 300;
+}
+
+.sub2-container h2{
+    /* font-family: "Jua", sans-serif; */
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 800;
+    color: white;
+    font-size: 30pt;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px 5px #1c1c1c;
+
+}
+
+.sub2-container h3{
+    position: relative;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 600;
+    color: yellow;
+    font-size: 20pt;
+    letter-spacing: 5px;
+    left: 30px;
+    margin-top: 12px;
+    text-shadow: 3px 3px 3px #1c1c1c;
+
+}
+
+.frame2 {
+    width: 1080px;
+    height: 1920px;
+    background-image: url('images/fire.png');
+    background-size: 300%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sub2-bottom{
+    text-align: center;
+    animation: shake 1s ease-in-out infinite; /* 0.5초 동안 무한 반복 */
+}
+
+/* 흔들리는 애니메이션 정의 */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px) translateY(10px); }
+    50% { transform: translateX(10px) translateY(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+  
+  
